@@ -2,10 +2,8 @@
 #Author: Zach Almon
 
 import urllib.request
-import re
 import os
 import platform
-import sys
 import praw
 import time
 
@@ -173,7 +171,7 @@ def main():
         print('\n\nWaiting %d seconds' % (int(time_to_wait)))
 
         #If for some reason the downloading takes longer than 1.5 hours then go ahead and go to next loop otherwise wait
-        if time_to_wait < 0:
+        if int(time_to_wait) < 0:
             pass
         else:
             time.sleep(int(time_to_wait))
