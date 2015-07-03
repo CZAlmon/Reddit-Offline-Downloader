@@ -113,7 +113,7 @@ def main():
                 #post.name laways starts with t3_ which is not needed
                 temp = temp[3:]
                 
-                list_of_urls.append(reddit_url + list_of_subreddits[i] + url_part_2 + temp + '/')
+                list_of_urls.append(reddit_url + list_of_subreddits[i] + url_part_2 + temp + '/?limit=500')
 
                 list_of_titles.append(list_of_subreddits[i] + ' submission number - ' + str(counter))
 
